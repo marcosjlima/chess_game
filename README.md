@@ -8,8 +8,8 @@
 <div align="center">
 
 [![Status](https://img.shields.io/badge/status-active-success.svg)]()
-[![GitHub Issues](https://img.shields.io/github/issues/kylelobo/The-Documentation-Compendium.svg)](https://github.com/marcosjlima/chess_game/issues)
-[![GitHub Pull Requests](https://img.shields.io/github/issues-pr/kylelobo/The-Documentation-Compendium.svg)](https://github.com/marcosjlima/chess_game/pulls)
+[![GitHub Issues](https://img.shields.io/github/issues/marcosjlima/chess_game.svg)](https://github.com/marcosjlima/chess_game/issues)
+[![GitHub Pull Requests](https://img.shields.io/github/issues-pr/marcosjlima/chess_game.svg)](https://github.com/marcosjlima/chess_game/pulls)
 [![License](https://img.shields.io/badge/license-MIT-blue.svg)](/LICENSE)
 
 </div>
