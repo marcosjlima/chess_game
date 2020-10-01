@@ -1,15 +1,21 @@
-pub mod ui;
+use chess_game::bishop::Bishop;
+use chess_game::board::Board;
+use chess_game::ui;
+use chess_game::Color;
+use std::error::Error;
 
-fn main() {
-    let piece: ui::ChessPiece = ui::ChessPiece {
-        position: ui::Position { row: 0, column: 0 },
-        color: ui::Color::BLACK,
-        icon: 'A',
+fn main() -> Result<(), Box<dyn Error>> {
+    let mut board: Board = Board {
+        bishops: Vec::new(),
     };
 
-    let mut board = vec![vec![false; 8]; 8];
+    board.bishops.push(Bishop::new(1, 1, Color::BLACK));
+    board.bishops.push(Bishop::new(1, 2, Color::BLACK));
+    board.bishops.push(Bishop::new(1, 3, Color::BLACK));
 
-    board = ui::move_piece(piece, board);
+    println!("{:#?}", board);
 
-    ui::print_board(board);
+    ui::print_board(&board);
+
+    Ok(())
 }
